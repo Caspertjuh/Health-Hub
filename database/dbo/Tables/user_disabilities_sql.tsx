@@ -1,0 +1,13 @@
+
+CREATE TABLE user_disabilities (
+    user_id TEXT PRIMARY KEY,
+    language BOOLEAN DEFAULT 0,
+    planning BOOLEAN DEFAULT 0,
+    sensory BOOLEAN DEFAULT 0,
+    motor BOOLEAN DEFAULT 0,
+    social BOOLEAN DEFAULT 0,
+    cognitive BOOLEAN DEFAULT 0,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);

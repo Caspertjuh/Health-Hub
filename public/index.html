@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Dagplanning Applicatie voor Dagbesteding</title>
+  <meta name="description" content="Dagplanning applicatie voor mensen met verstandelijke beperkingen" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!-- Preload fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Prevent zooming on touch devices -->
+  <style>
+    * {
+      touch-action: manipulation;
+    }
+    button, a, [role="button"] {
+      cursor: pointer;
+      min-height: 44px; /* Minimum touch target size */
+    }
+    .touch-target {
+      min-width: 44px;
+      min-height: 44px;
+    }
+  </style>
+</head>
+<body>
+  <noscript>
+    <div style="padding: 2rem; text-align: center; font-family: sans-serif;">
+      <h1>JavaScript is vereist</h1>
+      <p>Deze applicatie heeft JavaScript nodig om te functioneren. Schakel JavaScript in en probeer het opnieuw.</p>
+    </div>
+  </noscript>
+  <div id="root"></div>
+</body>
+</html>
